@@ -16,15 +16,16 @@ controlling collective processes across dynamic robot teams.
 
 ## 60-second script
 
-Hi, I’m Angela Cortecchia from the University of Bologna. My research asks:
-can we program a robot swarm as one system while keeping its execution
-decentralized? I use Aggregate Computing to bring operating-system capabilities
-to the collective level. My work already provides building blocks for
-formation, consensus, distributed sensing, replanning, and safety. The next
-step is a Collective Robotic Operating System that can run concurrent collective
-processes, preempt or adapt them at runtime, and remain safe during transitions.
-If you work on swarms, runtime systems, or safe adaptation, come find me at the
-PhD Symposium.
+Hi, I’m Angela Cortecchia from the University of Bologna. My research asks how
+we can program a robot swarm as one system while its execution remains
+decentralized. I use Aggregate Computing to lift runtime capabilities from
+individual robots to the collective level. So far, I have developed building
+blocks for formation, consensus, distributed sensing, replanning, and safety.
+Next, I will integrate them into a Collektive-based Collective Robotic Operating
+System that supports concurrent processes, preemption, and safe runtime
+adaptation. This includes formation constraints and safe target switching. If
+you work on swarm programming or self-adaptation, come and discuss it with me
+at the PhD Symposium.
 
 #### Resources
 
