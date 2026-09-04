@@ -3,189 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ph.D. Flash Talk: Angela Cortecchia</title>
+    <title>Towards Collective Robotic Operating Systems</title>
 
-    <!-- Fonts: Archivo for bold display, Satoshi for clean body text -->
-    <link href="https://api.fontshare.com/v2/css?f[]=archivo@800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <!-- Display fonts used by the original presentation, with local fallbacks. -->
+    <link href="https://api.fontshare.com/v2/css?f[]=archivo@700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="slide-wrapper">
-    <section class="slide">
-        <div class="poster-container">
+<main class="slide-wrapper">
+    <section class="slide" aria-label="ACSOS 2026 PhD Symposium flash talk">
+        <header class="slide-header">
+            <div class="identity">
+                <strong>Angela Cortecchia</strong>
+                <span>University of Bologna</span>
+            </div>
+            <div class="event">
+                <strong>ACSOS 2026</strong>
+                <span>PhD Symposium</span>
+            </div>
+        </header>
 
-            <!-- HEADER -->
-            <header class="poster-header reveal">
-                <div class="header-title">
-                    <h1>Advances in <span>Collective Robotics</span> Through <i>Macro-Programming</i></h1>
-                    <div class="author-info">
-                        <div class="author-copy">
-                            <div>Angela Cortecchia</div>
-                            <a href="mailto:angela.cortecchia@unibo.it">angela.cortecchia@unibo.it</a>
-                        </div>
-                    </div>
-                </div>
-            </header>
+        <div class="hero">
+            <div class="hero-copy">
+                <p class="research-direction">Towards a Collective Robotic Operating System</p>
+                <h1>Program robot swarms at the <span>collective level</span></h1>
+                <p class="main-idea">
+                    Aggregate Computing expresses one global behavior while robots execute and adapt through local interactions.
+                </p>
 
-            <!-- CONTENT GRID -->
-            <div class="poster-content">
+                <p class="evidence">
+                    My work turns results in <strong>formation, consensus, sensing, replanning, and safety</strong>
+                    into reusable runtime services.
+                </p>
 
-                <!-- COLUMN 1: The Vision -->
-                <div class="column is-vision reveal delay-1">
-                    <div class="section challenge-section">
-                        <h3>Challenge</h3>
-                        <div class="challenge-card-stack">
-                            <div class="figure-flow">
-                                <figure class="is-many-devices">
-                                    <img src="images/uc-sven.svg" alt="Distributed devices around the world">
-                                    <figcaption>Heterogeneous devices</figcaption>
-                                </figure>
-                                <div class="figure-transition" aria-hidden="true">
-                                    <svg viewBox="0 0 36 24" role="presentation" focusable="false" aria-hidden="true">
-                                        <path d="M3 12h24m0 0-7-6m7 6-7 6"/>
-                                    </svg>
-                                </div>
-                                <figure>
-                                    <img src="images/collective.svg" alt="A collective system represented as connected devices">
-                                    <figcaption>Collective behavior</figcaption>
-                                </figure>
-                            </div>
-                            <div class="challenge-card is-context">
-                                <span>Context</span>
-                                <p><strong>Collective Adaptive Systems</strong> are large-scale group of heterogeneous devices
-                                    and services that must stay adaptive while devices do things and the environment changes at runtime</p>
-                                <span><br></span>
-                                <p><strong>Macro-programming</strong> allows for programming at the collective level,
-                                    abstracting away the individual node behavior specification.</p>
-                                <br>
-                                <p><strong>Aggregate Computing</strong> is built on that abstraction,
-                                it emphasizes the use of local interactions and self-organization to achieve global objectives.</p>
-                            </div>
-                            <div class="challenge-card is-gap">
-                                <span>Open gap</span>
-<!--                                <p>Collective of heterogeneous sensors with different goals in their neighbor-local view,-->
-<!--                                but with the same goal as a local view,-->
-<!--                                should be able to act like a single entity.</p>-->
-<!--                                <p>We should be able to interact with such systems in a "classic Operating System" fashion.</p>-->
-                                <p><strong>Aggregate Computing</strong> systems often remain isolated aggregate programs:</p>
-                                <ul>
-                                    <li>No support for preemption;</li>
-                                    <li>User permissions not defined.</li>
-                                </ul>
-                                <br>
-                                <span>Towards <i>Collective Operating Systems</i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- COLUMN 2: What Exists Now -->
-                <div class="column is-building reveal delay-2">
-                    <div class="section">
-                        <h3>Contributions</h3>
-                    </div>
-
-                    <div class="contribution-grid">
-                        <div class="media-mosaic">
-                            <div class="contribution-card">
-                                <div class="contribution-heading"><span>Consensus</span>: <strong>Self-stabilizing gossip</strong></div>
-                                <figure>
-                                    <img src="images/gossip.gif" alt="Gossip convergence animation">
-                                </figure>
-                            </div>
-
-                            <div class="contribution-card">
-                                <div class="contribution-heading"><span>Resource Management</span>: <strong>FieldVMC</strong></div>
-                                <figure>
-                                    <img src="images/oneroot.gif">
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="contribution-card">
-                            <div class="contribution-heading"><span>Monitoring</span>: <strong>Field-Based Distributed Particle Filtering</strong></div>
-                            <div class="media-mosaic monitoring-strip">
-                                <figure class="is-dpf">
-                                    <img src="images/dpf.gif" alt="Distributed particle filtering estimate with seven neighbors">
-                                </figure>
-                                <figure class="is-dpf">
-                                    <img src="images/three_zebras_by_number_of_neighbors.jpg" alt="Distributed particle filtering estimate with seven neighbors">
-                                </figure>
-                                <figure class="is-dpf">
-                                    <img src="images/sensors_zebras_movement.png">
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="media-mosaic">
-                            <div class="contribution-card">
-                                <div class="contribution-heading"><span>Adaptation</span>: <strong>Runtime replanning</strong></div>
-                                <figure>
-                                    <img src="images/replanning.gif" alt="Runtime replanning animation">
-                                </figure>
-                            </div>
-
-                            <div class="contribution-card is-safety">
-                                <div class="contribution-heading"><span>Safety</span>: <strong>Control Barrier Functions</strong></div>
-                                <figure>
-                                    <img src="images/carol.gif" alt="Drones avoiding an obstacle while preserving formation">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
+                <div class="next-step">
+                    <span>Next research step</span>
+                    <p>Concurrent collective processes with preemption and safe runtime adaptation</p>
                 </div>
             </div>
+
+            <figure class="hero-visual">
+                <div class="visual-halo" aria-hidden="true"></div>
+                <img src="images/drones_avoiding_formation.png"
+                     alt="A robot swarm maintaining formation while avoiding obstacles">
+                <figcaption>Collective objective with decentralized execution</figcaption>
+            </figure>
         </div>
+
+        <footer class="slide-footer">
+            <div class="invitation">
+                <span class="invitation-mark" aria-hidden="true"></span>
+                <strong>Meet me at the ACSOS PhD Symposium</strong>
+            </div>
+            <a href="mailto:angela.cortecchia@unibo.it">angela.cortecchia@unibo.it</a>
+        </footer>
     </section>
-</div>
-<script>
-    const fitPoster = () => {
-        const slide = document.querySelector('.slide');
-        const poster = document.querySelector('.poster-container');
-        const content = document.querySelector('.poster-content');
-
-        if (!slide || !poster || !content) {
-            return;
-        }
-
-        poster.style.setProperty('--fit-scale', '1');
-
-        requestAnimationFrame(() => {
-            const availableWidth = slide.clientWidth;
-            const availableHeight = slide.clientHeight;
-            const neededWidth = Math.max(poster.scrollWidth, content.scrollWidth);
-            const neededHeight = Math.max(poster.scrollHeight, content.scrollHeight);
-            const columnFitScale = [...document.querySelectorAll('.column')]
-                .reduce((scale, column) => Math.min(scale, column.clientHeight / column.scrollHeight), 1);
-            const fitScale = Math.min(1, availableWidth / neededWidth, availableHeight / neededHeight, columnFitScale);
-            const safeScale = fitScale < 1 ? fitScale * 0.995 : 1;
-
-            poster.style.setProperty('--fit-scale', Math.max(0.78, safeScale).toFixed(3));
-        });
-    };
-
-    window.addEventListener('load', fitPoster);
-    window.addEventListener('resize', fitPoster);
-    document.fonts?.ready.then(fitPoster);
-
-    document.querySelectorAll('video[data-start][data-end]').forEach((video) => {
-        const start = Number(video.dataset.start);
-        const end = Number(video.dataset.end);
-
-        video.addEventListener('loadedmetadata', () => {
-            if (Number.isFinite(start)) {
-                video.currentTime = start;
-            }
-            video.play().catch(() => {});
-        });
-
-        video.addEventListener('timeupdate', () => {
-            if (Number.isFinite(start) && Number.isFinite(end) && video.currentTime >= end) {
-                video.currentTime = start;
-                video.play();
-            }
-        });
-    });
-</script>
+</main>
 </body>
 </html>
