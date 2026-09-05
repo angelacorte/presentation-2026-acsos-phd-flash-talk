@@ -3,57 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Towards Collective Robotic Operating Systems</title>
+    <title>An Operating System for the Collective</title>
 
-    <!-- Display fonts used by the original presentation, with local fallbacks. -->
     <link href="https://api.fontshare.com/v2/css?f[]=archivo@700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <main class="slide-wrapper">
-    <section class="slide" aria-label="ACSOS 2026 PhD Symposium flash talk">
-        <div class="content-pane">
-            <header class="identity">
+    <section class="slide poster" aria-label="ACSOS 2026 PhD Symposium flash talk">
+
+        <header class="topbar">
+            <div class="who">
                 <strong>Angela Cortecchia</strong>
-                <img class="department-logo"
-                     src="images/DIP INFORMATICA-SCIENZA E INGEGNERIA_DISI_EN.svg"
-                     alt="Department of Computer Science and Engineering, University of Bologna">
-            </header>
-
-            <div class="research">
-                <p class="kicker">PhD research</p>
-                <h1>Collective Robotic <span>Operating Systems</span></h1>
-                <p class="main-idea">Aggregate Computing as a runtime layer for robot swarms</p>
-
-                <div class="evidence">
-                    <span>Building blocks developed so far</span>
-                    <p>Formation, consensus, distributed sensing, runtime replanning, and safety filtering</p>
-                </div>
-
-                <div class="future">
-                    <p class="future-label">Next research phase</p>
-                    <h2>A Collektive-based CROS prototype</h2>
-                    <p>Concurrent collective processes and preemption, integrated with safety filters for formation and runtime target switching</p>
-                </div>
+                <a class="mail" href="mailto:angela.cortecchia@unibo.it">angela.cortecchia@unibo.it</a>
+                <span>University of Bologna &middot; supervised by Prof. Danilo Pianini</span>
             </div>
-
-            <footer class="contact">
-                <a href="mailto:angela.cortecchia@unibo.it">angela.cortecchia@unibo.it</a>
-            </footer>
-        </div>
-
-        <aside class="visual-pane">
-            <header class="event">
+            <img class="department-logo"
+                 src="images/DIP INFORMATICA-SCIENZA E INGEGNERIA_DISI_EN.svg"
+                 alt="Department of Computer Science and Engineering, University of Bologna">
+            <div class="event">
                 <strong>ACSOS 2026</strong>
                 <span>PhD Symposium</span>
-            </header>
+            </div>
+        </header>
 
-            <figure class="hero-visual">
-                <img src="images/drones_avoiding_formation.png"
-                     alt="A robot swarm maintaining formation while avoiding obstacles">
-                <figcaption>Collective goals with decentralized execution</figcaption>
-            </figure>
-        </aside>
+        <div class="headline">
+            <div class="title-block">
+                <h1>An operating system<br><span>for the collective</span></h1>
+                <p class="paper-ref">Paper &mdash; <i>Towards Collective Robotic Operating Systems through Aggregate Computing</i></p>
+            </div>
+            <p class="subtitle">
+                One program for the whole swarm &mdash; running on devices that move, fail, join and leave.
+                <b>Aggregate Computing</b> as the runtime layer.
+            </p>
+        </div>
+
+        <div class="stack">
+            <div class="layer-label layer-top">
+                <span>Collective applications</span>
+                <em>specified at the swarm level</em>
+            </div>
+
+            <p class="services-label">Self-organising services <em>&mdash; designed, implemented in Collektive, published</em></p>
+
+            <div class="services">
+                <figure class="service">
+                    <div class="frame"><img src="images/oneroot.gif" alt="Self-organising morphogenesis growing a structure"></div>
+                    <figcaption><strong>Formation</strong><span>self-organising morphogenesis</span></figcaption>
+                </figure>
+                <figure class="service">
+                    <div class="frame"><img src="images/replanning.gif" alt="Swarm redistributing tasks after a robot failure"></div>
+                    <figcaption><strong>Replanning</strong><span>tasks redistributed on failure</span></figcaption>
+                </figure>
+                <figure class="service">
+                    <div class="frame"><img src="images/gossip.gif" alt="Self-stabilising min-max gossip reaching consensus"></div>
+                    <figcaption><strong>Consensus</strong><span>self-stabilising min&ndash;max gossip</span></figcaption>
+                </figure>
+                <figure class="service">
+                    <div class="frame"><img src="images/dpf.gif" alt="Distributed particle filtering tracking multiple targets"></div>
+                    <figcaption><strong>Sensing</strong><span>distributed particle filtering</span></figcaption>
+                </figure>
+                <figure class="service">
+                    <div class="frame"><img src="images/carol.gif" alt="Safety filter keeping robots collision-free during adaptation"></div>
+                    <figcaption><strong>Safety</strong><span>CBF/CLF filter on transients</span></figcaption>
+                </figure>
+            </div>
+
+            <div class="layer-label layer-bottom">
+                <span>Devices: mobile, heterogeneous, failing</span>
+                <em>no central point of coordination</em>
+            </div>
+        </div>
+
+        <footer class="bottombar">
+            <p class="next-label">Next</p>
+            <p class="next-text">Concurrent collective processes &middot; preemption &middot; safe runtime adaptation &mdash; one CROS prototype in <b>Collektive</b></p>
+        </footer>
+
     </section>
 </main>
 </body>
