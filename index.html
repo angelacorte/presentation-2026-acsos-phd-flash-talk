@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>An Operating System for the Collective</title>
+    <title>One program for the whole collective</title>
 
     <link href="https://api.fontshare.com/v2/css?f[]=archivo@700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -29,56 +29,46 @@
 
         <div class="headline">
             <div class="title-block">
-                <h1>An operating system<br><span>for the collective</span></h1>
+                <h1>One program<br><span>for the whole collective</span></h1>
                 <p class="paper-ref">Paper &mdash; <i>Towards Collective Robotic Operating Systems through Aggregate Computing</i></p>
             </div>
-            <p class="subtitle">
-                One program for the whole swarm &mdash; running on devices that move, fail, join and leave.
-                <b>Aggregate Computing</b> as the runtime layer.
-            </p>
+            <div class="pitch">
+                <p class="problem">Robot swarms are heterogeneous, they move and fail, and they must adapt <b>without a centralized point of coordination</b>. Programming them one robot at a time does not scale.</p>
+                <p class="idea">With <b>Aggregate Computing</b> the collective is programmed as a whole &mdash; and the same program runs decentralized on every device.</p>
+            </div>
         </div>
 
         <div class="stack">
-            <div class="layer-label layer-top">
-                <span>Collective applications</span>
-                <em>specified at the swarm level</em>
-            </div>
-
-            <p class="services-label">Self-organising services <em>&mdash; designed, implemented in Collektive, published</em></p>
+            <p class="services-label">Building blocks investigated so far <em>&mdash; implemented in Collektive</em></p>
 
             <div class="services">
                 <figure class="service">
                     <div class="frame"><img src="images/oneroot.gif" alt="Self-organising morphogenesis growing a structure"></div>
-                    <figcaption><strong>Formation</strong><span>self-organising morphogenesis</span></figcaption>
+                    <figcaption><strong>Spatial organization</strong><span>FieldVMC morphogenesis</span></figcaption>
                 </figure>
                 <figure class="service">
                     <div class="frame"><img src="images/replanning.gif" alt="Swarm redistributing tasks after a robot failure"></div>
-                    <figcaption><strong>Replanning</strong><span>tasks redistributed on failure</span></figcaption>
+                    <figcaption><strong>Runtime replanning</strong><span>field-based missions</span></figcaption>
                 </figure>
                 <figure class="service">
                     <div class="frame"><img src="images/gossip.gif" alt="Self-stabilising min-max gossip reaching consensus"></div>
-                    <figcaption><strong>Consensus</strong><span>self-stabilising min&ndash;max gossip</span></figcaption>
+                    <figcaption><strong>Consensus</strong><span>self-stabilising gossip</span></figcaption>
                 </figure>
                 <figure class="service">
                     <div class="frame"><img src="images/dpf.gif" alt="Distributed particle filtering tracking multiple targets"></div>
-                    <figcaption><strong>Sensing</strong><span>distributed particle filtering</span></figcaption>
+                    <figcaption><strong>Distributed sensing</strong><span>field-based particle filtering</span></figcaption>
                 </figure>
                 <figure class="service">
                     <div class="frame"><img src="images/carol.gif" alt="Safety filter keeping robots collision-free during adaptation"></div>
-                    <figcaption><strong>Safety</strong><span>CBF/CLF filter on transients</span></figcaption>
+                    <figcaption><strong>Safety during motion</strong><span>CLF/CBF safety filter</span></figcaption>
                 </figure>
             </div>
 
-            <div class="layer-label layer-bottom">
-                <span>Devices: mobile, heterogeneous, failing</span>
-                <em>no central point of coordination</em>
+            <div class="now">
+                <span class="now-label">Now</span>
+                <p>Combining <b>spatial organization</b> and <b>safety</b> &mdash; complex shapes that grow and move without unsafe transients</p>
             </div>
         </div>
-
-        <footer class="bottombar">
-            <p class="next-label">Next</p>
-            <p class="next-text">Concurrent collective processes &middot; preemption &middot; safe runtime adaptation &mdash; one CROS prototype in <b>Collektive</b></p>
-        </footer>
 
     </section>
 </main>
